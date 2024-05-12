@@ -14,10 +14,14 @@
   --font1: "Ubuntu", sans-serif;
   --font2: "EB Garamond", serif;
   --fontW1:400;
+  --page-padding: 0 7.125rem;
+  --header_size: 4.70125rem;
+  --body_size:2.25rem;
 }
 #root {
   width: clamp(200px,100%,100%);
   font-size: 10px;
+  height: auto;
 }
 *{
   margin: 0;
@@ -90,8 +94,57 @@ nav{
   border-bottom: 3.3px solid var(--deep-gold-800);
   scale: 1.05;
 }
+.hero{
+  border: 1px solid white;
+  height: clamp(5vh,calc(100vh - 15%),100vh);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: var(--page-padding);
+  place-items: center center;
+  font-family: var(--font1);
+  background-color: var(--terracotta-500);
+  
+  & h1{
+    font-size:var(--header_size);
+    letter-spacing: -0.01em;
+    line-height: 1.2em;
+    
+    & span{
+      color: var(--deep-gold-400);
+    }
 
+  }
+  & p{
+    font-size:var(--body_size);
+    font-family: var(--font2);
+    line-height: 1.5em;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
 
+  & .heroimage{
+    width: clamp(200px,58.5em,585px);
+  }
+}
+.btn{
+  display: grid;
+  font-family:var(--font2);
+  font-size: var(--body_size);
+  width: fit-content;
+  color: var(--cream-100);
+  background-color: var(--deep-gold-400);
+  outline: none;
+  border: none;
+  padding: 0.9rem 3.25rem;
+  border-radius: 1.075rem;
+  text-decoration: none;
+  transition: ease-in-out 0.25s;
+}
+.btn:hover{
+  scale: 1.05;
+  background-color: var(--cream-100);
+  color: var(--deep-gold-400);
+}
 
 
 
