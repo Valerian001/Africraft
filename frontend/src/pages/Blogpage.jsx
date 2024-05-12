@@ -1,5 +1,7 @@
 // import { Link } from 'react-router-dom'
 import '../App.css'
+import Header from '../components/ui/Header'
+import Navbar from '../components/Navbar'
 
 export default function BlogPage() {
   // this function is meant to map through an array of blog posts 
@@ -18,7 +20,8 @@ export default function BlogPage() {
   //
   return (
     <>
-      <h1>BlogPage Working</h1>
+      <Header />
+      <Navbar />
     </>
   )
 }

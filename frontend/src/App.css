@@ -1,42 +1,105 @@
+:root{
+  /* colors */
+  --terracotta-900:#4D0D00;
+  --terracotta-500:#E2725B;
+  --cream-100:#FFFFEE;
+  --cream-500:#F2F2DA;
+  --deep-gold-400:#DEBE6A;
+  --deep-gold-800:#80600F;
+  --burnt-orange-500:#F28566;
+  --gray-200:#F1F1F1;
+  --gray-900:#AA9B9B;
+  --black:#070707;
+  font-size: 10px;
+  --font1: "Ubuntu", sans-serif;
+  --font2: "EB Garamond", serif;
+  --fontW1:400;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: clamp(200px,100%,100%);
+  font-size: 10px;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  display: grid;
+  font-family: var(--font2);
+  font-weight: var(--fontW1);
+  background-color: var(--gray-200);
+  color: var(--terracotta-900);
+  padding: 0.2em 0.5em;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+  & .text{
+    display: grid;
+    width: 100%;
+    place-items: center center;
+    grid-template-rows: 1fr;
+    overflow-x: hidden;
+    
+    & h1{
+      font-size: clamp(10px,2rem,25px);
+      
+    }
+    .scroll{
+      animation: scroll var(--_animation-duration, 30s) var(--_animation-direction, forwards) linear infinite;
+    }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
   }
+}
+
+nav{
+  display: grid;
+  font-family:var(--font2);
+  font-weight: var(--fontW1);
+  background-color: var(--cream-500);
+  justify-content: center;
+  padding: 0rem 1rem;
+
+  & .wrapper{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr auto 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 7.125rem;
+  }
+}
+#logo{
+  width: 8rem;
+}
+.navlink{
+  text-decoration: none;
+  color: var(--terracotta-900);
+  font-size: 2.25rem;
+  transition: ease-in-out 0.2s;
+}
+.navlink:hover{
+  color: var(--deep-gold-800);
+  scale: 1.04;
+}
+.linkset1,.linkset2{
+  display: flex;
+  gap: 5.625rem;
+  justify-self: end;
+}
+.active{
+  color: var(--deep-gold-800);
+  border-bottom: 3.3px solid var(--deep-gold-800);
+  scale: 1.05;
+}
+
+
+
+
+
+
+/* animations */
+@keyframes scroll {
   to {
-    transform: rotate(360deg);
+    transform: translate(calc(-50% - 0.5rem));
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
