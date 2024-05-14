@@ -89,6 +89,9 @@ nav{
   gap: 5.625rem;
   justify-self: end;
 }
+.nolinkset1,.nolinkset2{
+  display: none;
+}
 .active{
   color: var(--deep-gold-800);
   border-bottom: 3.3px solid var(--deep-gold-800);
@@ -168,6 +171,7 @@ nav{
   justify-content: space-around;
   flex-flow: column nowrap;
   z-index: 10;
+  position: relative;
 
   & .burger{
     width: 3rem;
@@ -178,4 +182,16 @@ nav{
     transition: all 0.3s linear;
   }
 
+}
+
+.menu{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 5rem;
+  background-color: var(--cream-500);
+  width: 50%;
+}
+.nomenu{
+  display: none;
 }
