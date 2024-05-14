@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <Header />
       <Navbar />
-      <div className="hero">
+      {/* <div className="hero ">
         <div className="leftdiv">
           <h1>Welcome to Afri<span>Craft</span></h1>
           <h1>Where Craftsmanship Meets Culture</h1>
@@ -21,7 +21,8 @@ export default function HomePage() {
         <div className="rightdiv">
           <img src={hero_image} alt="Aficraft illustration" className='heroimage' />
         </div>
-      </div>
+      </div> */}
+      
 
     </>
   )
