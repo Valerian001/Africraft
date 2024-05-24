@@ -2,7 +2,7 @@
 import '../App.css'
 import Header from '../components/ui/Header'
 import Navbar from '../components/Navbar'
-
+import "../responsive.css"
 export default function BlogPage() {
   // this function is meant to map through an array of blog posts 
   // then linking to the blog description of the blog post

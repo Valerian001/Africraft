@@ -1,4 +1,5 @@
 import "../../App.css"
+import "../../responsive.css"
 import { useRef, useState, useEffect } from "react"
 export default function Header() {
   // const [scroll, setScroll] = useState("noscroll")

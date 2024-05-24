@@ -19,20 +19,6 @@ body {
   box-sizing: border-box;
   display: flex;
   /* place-items: center top; */
-  /* min-width: 320px;
-  min-height: 100vh; */
+  /* /* min-width: 320px; */
+  min-height: 100vh;
 }
-
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
