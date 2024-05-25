@@ -18,6 +18,8 @@
   --header_size: 4.70125rem;
   --body_size:2.25rem;
   --body2_size:3.125rem;
+  --p_lineheight:1.5em;
+  --h_lineheight:1.2em;
 }
 #root {
   width: clamp(200px,100%,100%);
@@ -140,7 +142,7 @@ header{
   & h1{
     font-size:var(--header_size);
     letter-spacing: -0.01em;
-    line-height: 1.2em;
+    line-height: var(--h_lineheight);
     
     & span{
       color: var(--deep-gold-400);
@@ -150,7 +152,7 @@ header{
   & p{
     font-size:var(--body_size);
     font-family: var(--font2);
-    line-height: 1.5em;
+    line-height: var(--p_lineheight);
     margin-top: 0.625rem;
     margin-bottom: 1.25rem;
   }
@@ -398,7 +400,103 @@ header{
   }
 }
 
+/* about us page */
+.absection1{
+  height: calc(100vh - 15% );
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: var(--font2);
+  font-size: var(--body_size);
+  place-items: center center;
+  padding: var(--page-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
 
+
+  & .absectionleft img{
+    width: 49rem;
+  }
+  & .absectionright{
+    display: grid;
+    align-self: start;
+
+    & h1{
+      font-family: var(--font1);
+      font-size: var(--header_size);
+      margin-bottom: 20px;
+    }
+    & p{
+      width: 80%;
+      line-height: var(--p_lineheight);
+      font-size: var(--body_size);
+      margin-bottom: 10px;
+    }
+
+  }
+}
+.absection2{
+  background-color: var(--burnt-orange-500);
+  text-align: center;
+  padding: var(--page-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+  & h1{
+    font-family: var(--font1);
+    font-size: var(--header_size);
+    margin-bottom: 20px;
+  }
+  & p{
+    font-family: var(--font2);
+    font-size: var(--body_size);
+  }
+}
+.absection3{
+  text-align: center;
+  padding: var(--page-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+  & h1{
+    font-family: var(--font1);
+    font-size: var(--header_size);
+    margin-bottom: 20px;
+  }
+  & p{
+    font-family: var(--font2);
+    font-size: var(--body_size);
+  }
+}
+.absection4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center center ;
+  padding: var(--page-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+  & h1{
+    font-family: var(--font1);
+    font-size: var(--header_size);
+    margin-bottom: 20px;
+  }
+  & p{
+    font-family: var(--font2);
+    font-size: var(--body_size);
+    margin-bottom: 20px;
+  }
+  & .absectionright img{
+    width: clamp(200px,46.3em,585px);
+  }
+  & .absectionleft{
+    align-self: start;
+  }
+  & .absectionright{
+    align-self: end;
+  }
+
+
+}
 
 
 
