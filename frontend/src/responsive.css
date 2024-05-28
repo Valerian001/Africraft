@@ -310,3 +310,97 @@
 
   }
 }
+/* about us page */
+.smabsection1{
+  display: grid;
+  font-family: var(--font2);
+  font-size: var(--smbody_size);
+  place-items: center center;
+  padding: var(--smpage-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+
+  & .absectionleft img{
+    width: 29rem;
+  }
+  & .absectionright{
+    display: grid;
+    align-self: start;
+
+    & h1{
+      font-family: var(--font1);
+      font-size: var(--smheader_size);
+      margin-bottom: 10px;
+    }
+    & p{
+      width: 100%;
+      line-height: var(--p_lineheight);
+      font-size: var(--smbody_size);
+      margin-bottom: 5px;
+    }
+
+  }
+}
+.smabsection2{
+  background-color: var(--burnt-orange-500);
+  text-align: center;
+  padding: var(--smpage-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+  & h1{
+    font-family: var(--font1);
+    font-size: var(--smheader_size);
+    margin-bottom: 10px;
+  }
+  & p{
+    font-family: var(--font2);
+    font-size: var(--smbody_size);
+  }
+}
+.smabsection3{
+  text-align: center;
+  padding: var(--smpage-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+  & h1{
+    font-family: var(--font1);
+    font-size: var(--smheader_size);
+    margin-bottom: 10px;
+  }
+  & p{
+    font-family: var(--font2);
+    font-size: var(--smbody_size);
+  }
+}
+.smabsection4{
+  display: grid;
+  place-items: center center ;
+  padding: var(--smpage-padding);
+  padding-top: 5.3755rem;
+  padding-bottom: 5.3755rem;
+
+  & h1{
+    font-family: var(--font1);
+    font-size: var(--header_size);
+    margin-bottom: 10px;
+  }
+  & p{
+    font-family: var(--font2);
+    font-size: var(--body_size);
+    margin-bottom: 10px;
+  }
+  & .absectionright img{
+    width: 100%;
+  }
+  & .absectionleft{
+    align-self: start;
+  }
+  & .absectionright{
+    align-self: end;
+  }
+
+
+}
