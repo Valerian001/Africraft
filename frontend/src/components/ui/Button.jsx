@@ -2,8 +2,7 @@
 import { Link } from "react-router-dom"
 import '../../App.css'
 export default function Button(props) {
-  return (
-    
+  return (  
     <Link to = "/shop" className="btn">{props.text}</Link>
   )
 }

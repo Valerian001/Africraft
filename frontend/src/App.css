@@ -17,11 +17,13 @@
   --page-padding: 0 7.125rem;
   --header_size: 4.70125rem;
   --body_size:2.25rem;
+  --placeholder_textSize:1.5625rem;
   --body2_size:3.125rem;
   --p_lineheight:1.5em;
   --h_lineheight:1.2em;
 }
 #root {
+  position: relative;
   width: clamp(200px,100%,100%);
   font-size: 10px;
   height: auto;
@@ -494,10 +496,76 @@ header{
   & .absectionright{
     align-self: end;
   }
-
-
 }
+/* contact page */
+.contact{
+  display: grid;
+  height: 60rem;
+  place-items: center center;
+  color: var(--terracotta-900);
 
+  & a{
+    text-decoration: none;
+    color: var(--deep-gold-800);
+  }
+}
+.contact_container{
+  width: 80%;
+  height: 42rem;
+  background: linear-gradient(270deg, #4D0D00 15%, #F2F2DA 15.05%, #F2F2DA 100%);
+  mix-blend-mode: normal;
+  border-radius: 0.9375rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  /* padding: var(--page-padding); */
+
+  & .contact_left{
+    border: 1px solid black;
+
+    & h1{
+      font-size: var(--header_size);
+      font-family: var(--font1);
+    }
+    & p{
+      font-size: var(--body_size);
+      font-family: var(--font2);
+    }
+    & button{
+      font-size: var(--body_size);
+      font-family: var(--font2);
+      padding: 0.5625rem 2.875rem;
+      border-radius: 1.075rem;
+      background-color: var(--deep-gold-800);
+      color: var(--cream-100);
+      border: none;
+      outline: none;
+      width: fit-content;
+    }
+    & input{
+      border: none;
+      border-bottom: 2px solid #A1A1A1;
+      background-color: transparent;
+      height: 30px;
+      width: 37.5rem;
+    }
+    & input::placeholder{
+      font-family: var(--font2);
+      font-size: var(--placeholder_textSize);
+      color: #7D7D7D;
+    }
+    & form{
+      border: 1px solid black;
+      display: grid;
+      place-content: start start;
+      gap: 10px;
+    }
+    & h1, & form,& p{
+      margin-left: 50px;
+    }
+
+  }
+}
 
 
 
