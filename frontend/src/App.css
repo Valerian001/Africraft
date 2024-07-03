@@ -4,6 +4,7 @@
   --terracotta-500:#E2725B;
   --cream-100:#FFFFEE;
   --cream-500:#F2F2DA;
+  --cream-600:#ECECCB;
   --deep-gold-400:#DEBE6A;
   --deep-gold-800:#80600F;
   --burnt-orange-500:#F28566;
@@ -511,17 +512,19 @@ header{
 }
 .contact_container{
   width: 80%;
-  height: 42rem;
+  height: 500px;
   background: linear-gradient(270deg, #4D0D00 15%, #F2F2DA 15.05%, #F2F2DA 100%);
   mix-blend-mode: normal;
   border-radius: 0.9375rem;
   display: grid;
   gap: 10px;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 50% auto;
+  overflow: hidden;
   /* padding: var(--page-padding); */
 
   & .contact_left{
-    border: 1px solid black;
+    padding-left: 2rem;
+    padding-right: 2.5625rem;
 
     & h1{
       font-size: var(--header_size);
@@ -541,27 +544,94 @@ header{
       border: none;
       outline: none;
       width: fit-content;
+      margin-top: 10px;
     }
     & input{
       border: none;
       border-bottom: 2px solid #A1A1A1;
       background-color: transparent;
-      height: 30px;
+      height: 40px;
       width: 37.5rem;
+      font-family: var(--font2);
     }
     & input::placeholder{
       font-family: var(--font2);
       font-size: var(--placeholder_textSize);
       color: #7D7D7D;
     }
+    & input:focus-visible{
+      font-family: var(--font2);
+      outline: none;
+      color: inherit;
+      font-size: 1.65rem;
+    }
+
     & form{
-      border: 1px solid black;
       display: grid;
       place-content: start start;
       gap: 10px;
     }
     & h1, & form,& p{
       margin-left: 50px;
+    }
+
+    & svg{
+      margin-top: 1.3125rem;
+    }
+
+  }
+
+  & .contact_right{
+    font-size: var(--body_size);
+    font-family: var(--font2);
+    display: grid;
+    position: relative;
+    & .info_wrapper{
+      background-color: var(--cream-600);
+      align-self: center;
+      position: absolute;
+      width: 100%;
+      height: 28rem;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding-left: 2rem;
+      color: var(--deep-gold-800);
+
+      & h1{
+        font-size: var(--header_size);
+        font-family: var(--font1);
+      }
+
+      & address{
+        font-style: normal;
+        display: grid;
+        gap: 10px;
+        
+        & a{
+          display: grid;
+          grid-template-columns: 50px auto;
+          align-items: center;
+        }
+      }
+    }
+    & img{
+      width: 40px;
+      filter: invert(34%) sepia(67%) saturate(594%) hue-rotate(5deg) brightness(92%) contrast(89%);
+    }
+
+    & .social_wrapper{
+      place-self: end end;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-right: 2rem;
+
+
+      & img{
+        filter: invert(82%) sepia(18%) saturate(949%) hue-rotate(1deg) brightness(91%) contrast(94%);
+        width: 35px;
+
+      }
     }
 
   }
