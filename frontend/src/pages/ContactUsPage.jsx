@@ -2,6 +2,7 @@ import '../App.css'
 import "../responsive.css"
 import Header from '../components/ui/Header'
 import Navbar from '../components/Navbar'
+import Footer from '../components/ui/Footer'
 import instalogo from '../assets/insta.svg'
 import facebooklogo from '../assets/facebook.svg'
 import whatsapplogo from '../assets/whatapp.svg'
@@ -45,6 +46,7 @@ export default function ContactUsPage() {
           </div>
         </div>
       </div>
+      <Footer/>
       
     </>
   )
