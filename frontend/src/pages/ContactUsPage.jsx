@@ -33,16 +33,16 @@ export default function ContactUsPage() {
             <div className="info_wrapper">
               <h1>Info</h1>
               <address>
-                <a href=""><img src={whatsapplogo} alt="" /><span>Phone Number</span></a>
-                <a href=""><img src={instalogo} alt="" /><span>@Africraft</span></a>
-                <a href=""><img src={facebooklogo} alt="" /><span>Africraft</span></a>
+                <a href="" className='scale_animation'><img src={whatsapplogo} alt="" /><span>Phone Number</span></a>
+                <a href="" className='scale_animation'><img src={instalogo} alt="" /><span>@Africraft</span></a>
+                <a href="" className='scale_animation'><img src={facebooklogo} alt="" /><span>Africraft</span></a>
               </address>
             </div>
-            <div className="social_wrapper">
-              <a href=""><img src={instalogo} alt="instagram" /></a>
-              <a href=""><img src={facebooklogo} alt="Facebook" /></a>
-              <a href=""><img src={whatsapplogo} alt="Whatsapp" /></a>
-            </div>
+            <address className="social_wrapper">
+              <a href="" className='scale_animation'><img src={instalogo} alt="instagram" /></a>
+              <a href="" className='scale_animation'><img src={facebooklogo} alt="Facebook" /></a>
+              <a href="" className='scale_animation'><img src={whatsapplogo} alt="Whatsapp" /></a>
+            </address>
           </div>
         </div>
       </div>
